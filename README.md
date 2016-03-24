@@ -3,7 +3,7 @@ Um pequeno (ainda) Makefile para compilar, programar e gravar um arduino utiliza
 
 O que €
 -------
-Este Makefile produz os arquivos **.elf**, **.o** e **.ihex** a partir de um arquivo **.S** **(note o s maiusculo)** e então grava o código no Arduino.
+Este Makefile produz os arquivos **.elf**, **.o** e **.ihex** a partir de um arquivo **.S** **(note o s maiúsculo)** e então grava o código no Arduino.
 
 Dependências
 ------------
@@ -15,25 +15,25 @@ Para que esse Makefile funcione você precisar ter instalado no seu computador o
 Como Utilizar
 -------------
 ####Compila o código assembly e grava no Arduino
-```
+```makefile
 make ARQUIVO=aqui_vai_o_nome_do_seu_arquivo.S
 ```
 
 ####Grava o código no Arduino
 Se você já compilou o código e quiser gravar novamente ou gravar em outro Arduino  
-```
+```makefile
 make burn ARQUIVO=aqui_vai_o_nome_do_seu_arquivo.S
 ```
 
 ####Apenas Compila o Código
 Gera os arquivos **.elf**, **.o** e **.ihex** e não grava no Arduino  
-```
+```makefile
 make build ARQUIVO=aqui_vai_o_nome_do_seu_arquivo.S
 ```
 
 ####Limpa os Arquivos Gerados na Compilação
 Para fins de limpeza e organização  
-```
+```makefile
 make clean ARQUIVO=aqui_vai_o_nome_do_seu_arquivo.S
 ```
 
