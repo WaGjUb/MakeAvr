@@ -24,8 +24,8 @@ make clean ARQUIVO=aqui_vai_o_nome_do_seu_arquivo.S
 
 Como Funciona
 -------------
-*avr-as compila o assembly
-*avr-ld linka o arquivo .o num .elf
-*avr-objdump extrai do .elf o arquivo hexadecimal no padrao intel (ihex)
-*avrdude grava o .ihex no arduino
+- ravr-as compila o assembly
+- ravr-ld linka o arquivo .o num .elf
+- ravr-objdump extrai do .elf o arquivo hexadecimal no padrao intel (ihex)
+- ravrdude grava o .ihex no arduino
 
