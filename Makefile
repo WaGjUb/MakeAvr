@@ -2,8 +2,7 @@
 all:build burn
 	echo Finish
 build:
-	avr-gcc -g -mmcu=atmega328p -o $(ARQUIVO).o $(ARQUIVO)
-	avr-ld -o $(ARQUIVO).elf $(ARQUIVO).o
+	avr-gcc -g -mmcu=atmega328p -o $(ARQUIVO).elf $(ARQUIVO)
 	avr-objcopy -O ihex -R .eeprom $(ARQUIVO).elf $(ARQUIVO).hex
 
 burn:
